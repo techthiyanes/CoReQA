@@ -13,11 +13,11 @@ import torch
 import torch.cuda
 import torch.distributed as dist
 
-from src import dist_utils, slurm, util
-from src.index_io import load_or_initialize_index, save_embeddings_and_index
-from src.model_io import create_checkpoint_directories, load_or_initialize_atlas_model
-from src.options import get_options
-from src.tasks import get_task
+from atlas import dist_utils, slurm, util
+from atlas.index_io import load_or_initialize_index, save_embeddings_and_index
+from atlas.model_io import create_checkpoint_directories, load_or_initialize_atlas_model
+from atlas.options import get_options
+from atlas.tasks import get_task
 
 os.environ["TOKENIZERS_PARALLELISM"] = "true"
 
